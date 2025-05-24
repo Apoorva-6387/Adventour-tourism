@@ -1,105 +1,168 @@
-/* Package.html */
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-.package-body {
-    position: relative;
-    background-color: #fdf5f5;
-    color: rgb(2, 2, 2);
+/* Registration Button */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.package-heading {
-  background-color: #151515;
-  background-image: url("https://images.pexels.com/photos/346286/panorama-miami-florida-water-346286.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  
-    padding: 100px;  
-}
-.package-heading h1 {
-    margin-top: 20px;
-    font-size: 40px;
-    color: white;
-}
-
-.package-heading p{
-    color: white;
-    
-}
-
-.package3 {
-    display: grid;
-    padding: 10px;
-    gap: 0px;
-}
-
-.package-title {
-    text-align: center;
-}
-
-
-.package-title h2 {
-    font-size: 30px;
-    font-weight: 650;
-    padding-bottom: 10px;
-    line-height: 2;
-}
-
-.pack3-content {
-    background-color: #fdf5f5;
+.wrapper {
+    max-width: 275px;
+    margin: auto;
+    padding: 20px 30px;
+    min-height: 20px;
+    background-color: #ffffff27;
+    border-top: 1px solid #ffffff6e;
+    border-left: 1px solid #ffffff6e;
     border-radius: 15px;
-    box-shadow: 10px 10px 15px #3b3737;
-    background: linear-gradient(#445056, #47addd 45%, #fff 45%, #fff 100%);
-    padding: 25px;
-    padding-right: 50px;
-    display: flex;
-    margin-top: 5px;
-    margin-left: 149px;
-    margin-right: 149px;
-    margin-bottom: 1px;
-    gap: 15px;
 }
 
-.pack4-content {
-    background-color: #fdf5f5;
-    border-radius: 15px;
-    box-shadow: 10px 10px 15px #3b3737;
-    background-image: url('https://images.pexels.com/photos/255381/pexels-photo-255381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    padding: 25px;
-    padding-right: 50px;
-    display: flex;
-    margin-top: 5px;
-    margin-left: 149px;
-    margin-right: 149px;
-    margin-bottom: 1px;
-    gap: 15px;
+.wrapper .h5 {
+    font-size: 0.99rem;
+    color: #ddd;
 }
-
-.pack4-content h4{
-    text-align: center;
+.wrapper .destination {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 0.90rem;
 }
-
-.text-block1 {
-    color: #fdf5f5;
-    position: static;
-    margin-bottom: 10px;
+.wrapper .destination span {
+    margin-left: 95px;
+    text-align: right;
+}
+.wrapper .form-group {
+    border-bottom: 1px solid #ccc;
     text-align: left;
 }
 
-.image-pac {
-    margin-top: 50px;
-    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    cursor: pointer;
+.wrapper .form-group:hover {
+    border-bottom: 1px solid #eee;
 }
 
-.image-pac img {
+.wrapper .form-group .form-control {
     width: 100%;
-    height: 200px;
-    border-radius: 8px;
+    background: inherit;
+    border: none;
+    box-shadow: none;
+    color: #e9e9e9;
+    font-size: 10px;
 }
 
-.image-pac h3 {
-    color: rgb(16, 16, 16);
-    position: static;
-    font-size: 11px;
-    font-weight: 500;
+.wrapper .form-group input::placeholder {
+    font-size: 13px;
+    color: #ddd;
+}
+
+.wrapper .form-group input:focus::placeholder {
+    opacity: 0;
+}
+
+.wrapper .option {
+    color: #ccc;
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none
+}
+
+.wrapper .option:hover {
+    color: #eee;
+}
+
+.wrapper .option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+.wrapper .terms {
+    color: #bbb;
+    font-size: 0.85rem;
     text-align: center;
-    bottom: 10px;
-    right: 25px;
+}
+
+.wrapper .terms a {
+    text-decoration: none;
+    color: #eee;
+}
+
+.wrapper .terms a:hover {
+    color: #fff;
+}
+
+/* Responsive styles for tablets and below */
+@media (max-width: 900px) {
+    .wrapper {
+        max-width: 350px;
+        padding: 18px 16px;
+    }
+    .wrapper .h5,
+    .wrapper .destination,
+    .wrapper .destination span,
+    .wrapper .terms {
+        font-size: 0.95rem;
+    }
+    .wrapper .form-group .form-control {
+        font-size: 1rem;
+    }
+    .wrapper .form-group input::placeholder {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+    .wrapper {
+        max-width: 98vw;
+        min-width: unset;
+        margin: 10px;
+        padding: 12px 6px;
+        border-radius: 10px;
+    }
+    .wrapper .h5,
+    .wrapper .destination,
+    .wrapper .destination span,
+    .wrapper .terms {
+        font-size: 0.85rem;
+    }
+    .wrapper .form-group .form-control {
+        font-size: 0.9rem;
+    }
+    .wrapper .form-group input::placeholder {
+        font-size: 0.95rem;
+    }
+    .wrapper .destination span {
+        margin-left: 30px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+    .wrapper {
+        padding: 6px 2px;
+        max-width: 100vw;
+    }
+    .wrapper .h5,
+    .wrapper .destination,
+    .wrapper .destination span,
+    .wrapper .terms {
+        font-size: 0.75rem;
+    }
+    .wrapper .form-group .form-control {
+        font-size: 0.8rem;
+    }
+    .wrapper .form-group input::placeholder {
+        font-size: 0.8rem;
+    }
+    .wrapper .destination span {
+        margin-left: 10px;
+    }
 }

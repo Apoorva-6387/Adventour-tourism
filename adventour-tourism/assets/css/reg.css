@@ -116,3 +116,37 @@
         left: 32%;
     }
 }
+/* ...existing code... */
+
+@media (max-width: 600px) {
+    .wrapper {
+        max-width: 98vw;
+        min-width: unset;
+        margin: 10px;
+        padding: 12px 6px;
+    }
+    .wrapper .h5,
+    .wrapper .destination,
+    .wrapper .destination span,
+    .wrapper .terms {
+        font-size: 0.85rem;
+    }
+    .wrapper .form-group .form-control {
+        font-size: 0.9rem;
+    }
+    .wrapper .form-group input::placeholder {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+        padding: 6px 2px;
+    }
+    .wrapper .h5,
+    .wrapper .destination,
+    .wrapper .destination span,
+    .wrapper .terms {
+        font-size: 0.75rem;
+    }
+}

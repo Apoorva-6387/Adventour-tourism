@@ -1,4 +1,3 @@
-
 /* Location.html */
 
 .location-body {
@@ -73,7 +72,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .footlinks h4 {
@@ -140,4 +138,134 @@
     color: white;
     letter-spacing: 1px;
     font-weight: 300;
+}
+
+/* Responsive styles for tablets and below */
+@media (max-width: 900px) {
+  .location-section {
+    padding: 40px 10px;
+    min-height: unset;
+  }
+  .location-heading h1 {
+    font-size: 2.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .location-detail h1 {
+    font-size: 1.5rem;
+    padding-top: 20px;
+  }
+  .location-detail p,
+  .location-img p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  .location-img img {
+    width: 95vw;
+    max-width: 100%;
+    height: 220px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .footlinks h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  .footlinks ul li a {
+    font-size: 1rem;
+  }
+  .end {
+    padding-top: 30px;
+    padding-bottom: 8px;
+  }
+  .end p {
+    font-size: 0.95rem;
+  }
+  .stars i {
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+  .location-section {
+    padding: 18px 2vw;
+  }
+  .location-heading h1 {
+    font-size: 1.3rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .location-detail h1 {
+    font-size: 1.05rem;
+    padding-top: 8px;
+  }
+  .location-detail p,
+  .location-img p {
+    font-size: 0.95rem;
+    margin-top: 6px;
+    margin-bottom: 5px;
+  }
+  .location-img img {
+    width: 99vw;
+    height: 110px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+  }
+  .footlinks h4 {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+  .footlinks ul li a {
+    font-size: 0.85rem;
+  }
+  .end p {
+    font-size: 0.8rem;
+  }
+  .stars i {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+  .location-section {
+    padding: 6px 1vw;
+  }
+  .location-heading h1 {
+    font-size: 1rem;
+  }
+  .location-detail h1 {
+    font-size: 0.85rem;
+    padding-top: 4px;
+  }
+  .location-detail p,
+  .location-img p {
+    font-size: 0.8rem;
+  }
+  .location-img img {
+    width: 100vw;
+    height: 70px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .footlinks h4 {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+  }
+  .footlinks ul li a {
+    font-size: 0.7rem;
+  }
+  .end p {
+    font-size: 0.7rem;
+  }
+  .stars i {
+    font-size: 0.8rem;
+  }
 }
