@@ -1,7 +1,6 @@
-/* Importing fonts from Google */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-/* Registration Button */
 
 * {
     margin: 0;
@@ -98,7 +97,6 @@
     color: #fff;
 }
 
-/* Responsive styles for tablets and below */
 @media (max-width: 900px) {
     .wrapper {
         max-width: 350px;
@@ -118,7 +116,6 @@
     }
 }
 
-/* Responsive styles for mobile devices */
 @media (max-width: 600px) {
     .wrapper {
         max-width: 98vw;
@@ -144,7 +141,6 @@
     }
 }
 
-/* Extra small devices */
 @media (max-width: 400px) {
     .wrapper {
         padding: 6px 2px;

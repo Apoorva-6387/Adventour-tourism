@@ -1,7 +1,5 @@
-/* Importing fonts from Google */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-/* Registration Button */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -116,7 +114,7 @@
         left: 32%;
     }
 }
-/* ...existing code... */
+
 
 @media (max-width: 600px) {
     .wrapper {

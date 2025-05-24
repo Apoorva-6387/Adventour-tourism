@@ -1,4 +1,3 @@
-/* Location.html */
 
 .location-body {
     background-color: whitesmoke;
@@ -56,7 +55,6 @@
     color: rgb(246, 198, 8);
 }
 
-/* Footer */
 
 .footer {
     background: inherit;
@@ -140,7 +138,6 @@
     font-weight: 300;
 }
 
-/* Responsive styles for tablets and below */
 @media (max-width: 900px) {
   .location-section {
     padding: 40px 10px;
@@ -192,7 +189,6 @@
   }
 }
 
-/* Responsive styles for mobile devices */
 @media (max-width: 600px) {
   .location-section {
     padding: 18px 2vw;
@@ -233,7 +229,7 @@
   }
 }
 
-/* Extra small devices */
+
 @media (max-width: 400px) {
   .location-section {
     padding: 6px 1vw;

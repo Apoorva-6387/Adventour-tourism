@@ -8,7 +8,6 @@
   scroll-behavior: smooth;
 }
 
-/* Home page */
 
 .banner {
   width: 100%;
@@ -134,7 +133,6 @@ nav ul li a {
   padding: 10px 30px;
 }
 
-/* Services */
 
 .text h2 {
   font-size: 40px;
@@ -194,7 +192,6 @@ nav ul li a {
   border-radius: 0px;
 }
 
-/* Packages */
 
 .package {
   display: grid;
@@ -313,7 +310,6 @@ nav ul li a {
   transform: scale(1.03);
 }
 
-/* Button */
 
 .btn {
   display: inline-block;
@@ -335,7 +331,6 @@ nav ul li a {
   box-shadow: 5px 5px 10px #3b3737;
 }
 
-/* Locations */
 
 .location-content {
   display: flex;
@@ -381,7 +376,6 @@ nav ul li a {
   cursor: pointer;
 }
 
-/* Newsletter */
 
 .newsletter {
   display: flex;
@@ -440,7 +434,6 @@ nav ul li a {
   color: rgb(21, 74, 74);
 }
 
-/* Footer */
 
 .footer {
   background: inherit;
@@ -704,7 +697,6 @@ form textarea {
   background-color: transparent;
 }
 
-/* Responsive styles for tablets and below */
 @media (max-width: 900px) {
   nav ul {
     flex-direction: column;
@@ -749,7 +741,6 @@ form textarea {
   }
 }
 
-/* Responsive styles for mobile devices */
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
@@ -894,7 +885,7 @@ form textarea {
   }
 }
 
-/* Extra small devices */
+
 @media (max-width: 400px) {
   .title h1 {
     font-size: 1.2rem;
